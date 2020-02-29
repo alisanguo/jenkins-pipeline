@@ -11,6 +11,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                sayHello(name: 'wangli')
                 echo 'Building..' + params.test_bool
             }
         }
