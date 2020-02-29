@@ -12,7 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    sayHello(name: 'wangli')
+                    sayHello('wangli')
                 }
          
                 echo 'Building..' + params.test_bool
