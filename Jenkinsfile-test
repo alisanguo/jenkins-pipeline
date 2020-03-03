@@ -9,10 +9,10 @@ pipeline {
     }
 
     stages {
-        stage('Build') {
+        stage('Build 构建') {
             steps {
               
-                sayHello(name: 'wangli', msg: 'hello')
+                sayHello(name: 'wangli王利', msg: 'hello你好')
                 echo 'Building..' + params.test_bool
             }
         }
