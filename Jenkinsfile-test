@@ -12,7 +12,7 @@ pipeline {
         stage('Build 构建') {
             steps {
               
-                sayHello(name: 'wangli王利', msg: 'hello你好')
+                sayHello(name: 'env.cc', msg: 'hello你好')
                 echo 'Building..' + params.test_bool
             }
         }
