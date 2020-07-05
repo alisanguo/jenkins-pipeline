@@ -13,7 +13,7 @@ pipeline {
             steps {
               
                 script {
-                    cip.sayHello() 
+                    cip.doJob() 
                 }
                 echo 'Building..' + params.test_bool
             }
