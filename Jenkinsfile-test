@@ -12,7 +12,9 @@ pipeline {
         stage('Build 构建') {
             steps {
               
-                sayHello(name: 'env.cc', msg: 'hello你好')
+                script {
+                    cip.sayHello() 
+                }
                 echo 'Building..' + params.test_bool
             }
         }
